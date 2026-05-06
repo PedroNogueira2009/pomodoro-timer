@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Pomodoro Timer</h1>
+
+    <!-- Abas de modo -->
+    <div class="tabs">
+      <button class="tab active" data-mode="foco">Foco</button>
+      <button class="tab" data-mode="pausa">Pausa</button>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <span id="minutos">25</span>
+      <span class="separador">:</span>
+      <span id="segundos">00</span>
+    </div>
+
+    <!-- Controles -->
+    <div class="controles">
+      <button id="btn-iniciar">Iniciar</button>
+      <button id="btn-resetar">Resetar</button>
+    </div>
+
+    <!-- Contador de sessões -->
+    <p class="sessoes">Sessões completas hoje: <strong id="contagem">0</strong></p>
+
+    <!-- Histórico -->
+    <div class="historico">
+      <h2>Histórico</h2>
+      <ul id="lista-historico"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
